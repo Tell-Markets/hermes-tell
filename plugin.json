@@ -1,0 +1,30 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "tell",
+  "version": "1.0.0",
+  "description": "Tell for Hermes Agent: risk-check any token on Robinhood Chain before you buy it. A 0-100 score with every red flag behind it (contract powers, linked wallets, snipers, a deployer who sold, a fake website), and an hourly watch of new Pons launches sent to your chat. Read only: no keys, no transactions.",
+  "author": {
+    "name": "Tell",
+    "url": "https://tell.markets"
+  },
+  "homepage": "https://tell.markets/docs",
+  "repository": "https://github.com/Tell-Markets/hermes-tell",
+  "license": "MIT",
+  "keywords": [
+    "rug-check",
+    "token-security",
+    "robinhood-chain",
+    "pons",
+    "crypto",
+    "mcp"
+  ],
+  "extensions": {
+    "com.nousresearch.hermes": {
+      "servers": {
+        "tell": {
+          "trust": "untrusted"
+        }
+      }
+    }
+  }
+}
